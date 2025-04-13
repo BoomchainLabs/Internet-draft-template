@@ -1,0 +1,33 @@
+name: Convert IETF Draft to XML
+
+on:
+  push:
+    paths:
+      - 'specs/**/*.md'
+
+jobs:
+  build:
+    name: Markdown to XML
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdown2rfc
+        run: npm install --global @martinthomson/markdown2rfc
+
+      - name: Convert to XML
+        run: |
+          mkdir -p specs/xml
+          markdown2rfc specs/draft-okeamah-boomchainlabs-boompass-protocol.md specs/xml/draft-okeamah-boomchainlabs-boompass-protocol.xml
+
+      - name: Upload XML Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: BoomPass IETF XML
+          path: specs/xml/draft-okeamah-boomchainlabs-boompass-protocol.xml
