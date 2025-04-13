@@ -1,89 +1,56 @@
 ---
-###
-# Internet-Draft Markdown Template
-#
-# Rename this file from draft-todo-yourname-protocol.md to get started.
-# Draft name format is "draft-<yourname>-<workgroup>-<name>.md".
-#
-# For initial setup, you only need to edit the first block of fields.
-# Only "title" needs to be changed; delete "abbrev" if your title is short.
-# Any other content can be edited, but be careful not to introduce errors.
-# Some fields will be set automatically during setup if they are unchanged.
-#
-# Don't include "-00" or "-latest" in the filename.
-# Labels in the form draft-<yourname>-<workgroup>-<name>-latest are used by
-# the tools to refer to the current version; see "docname" for example.
-#
-# This template uses kramdown-rfc: https://github.com/cabo/kramdown-rfc
-# You can replace the entire file if you prefer a different format.
-# Change the file extension to match the format (.xml for XML, etc...)
-#
-###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "BoomPass: Decentralized Web3 Authentication and Access Control Protocol"
+abbrev: "BoomPass Protocol"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
-submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
-number:
-date:
+docname: draft-okeamah-boomchainlabs-boompass-protocol-latest
+submissiontype: independent
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: Security
+workgroup: Web3 Identity & Access
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - decentralized identity
+ - access control
+ - Web3 authentication
+ - token-based permissions
+ - multi-chain
 venue:
-  group: WG
+  group: Web3 Identity & Access
   type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  mail: wg@boomchainlab.com
+  arch: https://boomchainlab.com/boompass
+  github: Boomchainlab/BoomPass
+  latest: https://boomchainlab.com/boompass/protocol
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: David Okeamah
+    organization: BoomchainLabs
+    email: boomchainlabs@hotmail.com
+---
 
-normative:
+# Abstract
 
-informative:
-
-
---- abstract
-
-TODO Abstract
-
-
---- middle
+BoomPass defines a decentralized protocol for authentication and access control using blockchain-native identities...
 
 # Introduction
 
-TODO Introduction
-
+As decentralized applications proliferate...
 
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
 
-
 # Security Considerations
 
-TODO Security
-
+...
 
 # IANA Considerations
 
 This document has no IANA actions.
 
-
---- back
-
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+Thanks to the BoomchainLabs engineering team...
