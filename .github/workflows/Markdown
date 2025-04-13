@@ -1,0 +1,20 @@
+# BoomPass IETF Draft Pipeline
+
+This repository automates the conversion of an IETF-compliant Markdown draft into XML using `markdown2rfc`, with optional GitHub Actions integration.
+
+---
+
+## 1. `package.json`
+
+```json
+{
+  "name": "boompass-ietf-drafts",
+  "version": "1.0.0",
+  "description": "Internet-Draft conversion pipeline for BoomPass",
+  "scripts": {
+    "convert": "markdown2rfc specs/draft-okeamah-boomchainlabs-boompass-protocol.md specs/xml/draft-okeamah-boomchainlabs-boompass-protocol.xml"
+  },
+  "devDependencies": {
+    "@martinthomson/markdown2rfc": "^2.2.4"
+  }
+}
